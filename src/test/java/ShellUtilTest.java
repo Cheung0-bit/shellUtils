@@ -1,21 +1,23 @@
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import org.junit.jupiter.api.Test;
+import tool.ShellUtil;
 
-import java.io.File;
-
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.*;
 
 class ShellUtilTest {
 
-    ShellUtil shellUtil = new ShellUtil();
+    Function func = new Function();
 
     @Test
     public void test() {
 
-        String[] command = {"sh /home/mint03/test/shell/test.sh"};
-        for (String i : command
-        ) {
-            shellUtil.shell(i);
-        }
+        JSONObject json = new JSONObject();
+        func.shutVM("3001");
+        json = func.listVM();
+        System.out.println(json);
+
+
 
     }
 

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="RemoteTargetsManager">
     <targets>
-      <target name="mint03@10.255.248.57:8025" type="ssh/sftp">
+      <target name="root@10.255.248.59:22" type="ssh/sftp">
         <config>
-          <option name="projectRootOnTarget" value="/home/mint03/shellutils" />
-          <option name="serverName" value="mint03@10.255.248.57:8025 password" />
+          <option name="projectRootOnTarget" value="/root/shellUtils" />
+          <option name="serverName" value="root@10.255.248.59:22 password" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
-          <config>
-            <option name="javaVersionString" value="11.0.11" />
-          </config>
+          <config />
         </ContributedStateBase>
       </target>
     </targets>
